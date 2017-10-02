@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    tools:context="com.example.cess.whatsappclone.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/logowidth"
+        android:layout_height="@dimen/logoheight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="-175dp" />
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/login_codPais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_name"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="+55"
+        android:inputType="textPersonName"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/login_telefoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="textPersonName"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:layout_alignBaseline="@+id/login_codPais"
+        android:layout_alignBottom="@+id/login_codPais"
+        android:layout_toEndOf="@+id/login_codPais"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login"
+        android:onClick="goToValidator"
+        android:textColor="@color/primaryTextColor"
+        android:layout_below="@+id/login_codPais"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
