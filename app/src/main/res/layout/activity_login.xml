@@ -64,11 +64,10 @@
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_codPais"
         android:layout_marginTop="33dp"
         android:background="@color/colorPrimaryDark"
         android:text="Login"
-        android:onClick="goToValidator"
-        android:textColor="@color/primaryTextColor"
-        android:layout_below="@+id/login_codPais"
-        android:layout_alignParentStart="true" />
+        android:textColor="@color/primaryTextColor" />
 </RelativeLayout>
